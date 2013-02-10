@@ -15,7 +15,7 @@
  -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-  <string name="app_name">File Manager</string>
+  <string name="app_name">Файловый менеджер</string>
   <string name="app_description">Файловый менеджер CyanogenMod</string>
 
   <string name="device_blockdevice">Блочное устройство</string>
@@ -49,7 +49,7 @@
   <string name="msgs_cant_create_console">Не удаётся получить необходимые привилегии</string>
   <string name="msgs_privileged_console_alloc_failed">Невозможно запустить в Root-режиме. Переключение в безопасный режим</string>
   <string name="msgs_settings_save_failure">Настройка не может быть применена или сохранена</string>
-  <string name="msgs_settings_invalid_initial_directory">Начальная папка "<xliff:g id="initial_dir">%1$s</xliff:g>" недоступна. Переход в корневую папку</string>
+  <string name="msgs_settings_invalid_initial_directory">Начальная папка \"<xliff:g id="initial_dir">%1$s</xliff:g>\" недоступна. Переход в корневую папку</string>
 
   <string name="msgs_success">Операция прошла успешно</string>
   <string name="msgs_unknown">Были обнаружены ошибки. Операция завершилась неудачно</string>
@@ -64,7 +64,7 @@
   <string name="msgs_read_only_filesystem">Файловая система доступна только для чтения. Попробуйте смонтировать файловую систему для чтения/записи</string>
   <string name="msgs_illegal_argument">Недопустимый аргумент. Вызов не удался</string>
   <string name="msgs_unresolved_inconsistencies">Операция не допускается, поскольку это создаст несоответствия</string>
-  <string name="msgs_operation_not_allowed_in_current_directory">Операция не допускается в текущей папке. \n\nПапка назначения не может быть вложенной папкой источника или самим источником.</string>
+  <string name="msgs_operation_not_allowed_in_current_directory">Операция не допускается в текущей папке. \n\nПапка назначения не может быть вложенной папкой источника или самим источником</string>
 
   <string name="msgs_push_again_to_exit">Нажмите ещё раз для выхода</string>
 
@@ -244,6 +244,7 @@
   <string name="actions_menu_open_with">Открыть в\u2026</string>
   <string name="actions_menu_execute">Выполнить</string>
   <string name="actions_menu_send">Отправить</string>
+  <string name="actions_menu_send_selection">Отправить выбранное</string>
   <string name="actions_menu_compress">Сжать</string>
   <string name="actions_menu_extract">Извлечь</string>
   <string name="actions_menu_delete">Удалить</string>
@@ -322,7 +323,7 @@
   <string name="pref_disk_usage_warning_level">Предупреждения исп. памяти</string>
   <string name="pref_disk_usage_warning_level_summary" formatted="false">Показывать разноцветные индикации дискового пространства, когда они достигают <xliff:g id="level">%1$s</xliff:g> процентов свободного места</string>
   <string name="pref_compute_folder_statistics">Расчёт статистики по папкам</string>
-  <string name="pref_compute_folder_statistics_on">Внимание! Расчёт статистики по папкам займёт длительное время и потребуется значительное количество системных ресурсов</string>
+  <string name="pref_compute_folder_statistics_on">Внимание! Расчёт статистики по папкам займёт длительное время и потребует значительное количество системных ресурсов</string>
   <string name="pref_use_flinger">Использовать жесты</string>
   <string name="pref_use_flinger_summary">Используйте жест справа налево для удаления файлов или папок</string>
   <string name="pref_general_advanced_settings_category">Расширенные настройки</string>

@@ -576,7 +576,7 @@ mNfcAdapter = null;
             public void run() {
                 //Create the default console (from the preferences)
                 try {
-                    Console console = ConsoleBuilder.getConsole(NavigationActivity.this);
+                    Console console = ConsoleBuilder.createDefaultConsole(NavigationActivity.this);
                     if (console == null) {
                         throw new ConsoleAllocException("console == null"); //$NON-NLS-1$
                     }
