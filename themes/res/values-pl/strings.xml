@@ -15,6 +15,6 @@
  -->
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="dark_theme_name">Tmavé téma</string>
-  <string name="dark_theme_desc">Tmavé téma pro Správce souborů CyanogenMod.</string>
+  <string name="dark_theme_name">Ciemny motyw</string>
+  <string name="dark_theme_desc">Ciemny motyw dla Menedżera plików CyanogenMod.</string>
 </resources>

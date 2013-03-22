@@ -14,19 +14,21 @@
      limitations under the License.
  -->
 
-<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
 
-  <!-- The name of the application -->
-  <string name="app_name">File Manager Themes</string>
-  <!-- The description of the application -->
-  <string name="app_description">Themes for CyanogenMod File Manager.</string>
+    <!-- Editor behaviour -->
+    <PreferenceCategory
+      android:key="editor_behaviour"
+      android:title="@string/pref_editor_behaviour_category">
 
-  <!-- The author of the themes -->
-  <string name="themes_author" translatable="false">CyanogenMod</string>
+      <!-- Word wrap -->
+      <CheckBoxPreference
+        android:key="cm_filemanager_editor_word_wrap"
+        android:title="@string/pref_word_wrap"
+        android:persistent="true"
+        android:defaultValue="true" />
 
-  <!-- The dark theme name -->
-  <string name="dark_theme_name">Dark Theme</string>
-  <!-- The dark theme description -->
-  <string name="dark_theme_desc">A dark theme for CyanogenMod File Manager.</string>
+    </PreferenceCategory>
 
-</resources>
+</PreferenceScreen>

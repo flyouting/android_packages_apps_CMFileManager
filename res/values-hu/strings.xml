@@ -48,6 +48,10 @@
     <string name="cancelled_message">Megszakítva</string>
     <!-- Error message -->
     <string name="error_message">Hiba</string>
+    <!-- Copy text content description -->
+    <string name="copy_text_cd">Érintse meg a szöveg vágólapra másolásához</string>
+    <!-- Copy text content message -->
+    <string name="copy_text_msg">Szöveg vágólapra másolva</string>
 
     <!-- Warning dialog title -->
     <string name="warning_title">Figyelmeztetés</string>
@@ -364,6 +368,8 @@
     <string name="menu_settings">Beállítások</string>
     <!-- Menu * History * Clear history -->
     <string name="menu_clear_history">Előzmények törlése</string>
+    <!-- Menu * Editor * Word wrap -->
+    <string name="menu_word_wrap">Sortörés</string>
 
     <!-- Regular expression for create copy action -->
     <string name="create_copy_regexp"><xliff:g id="name">%1$s</xliff:g> - másolás<xliff:g id="extension">%2$s</xliff:g></string>
@@ -455,6 +461,8 @@
     <string name="actions_menu_add_shortcut">Parancsikon létrehozása</string>
     <!-- Actions Dialog * Menu * Open parent folder -->
     <string name="actions_menu_open_parent_folder">Szülő könyvtár megnyitása</string>
+    <!-- Actions Dialog * Menu * Compute checksum -->
+    <string name="actions_menu_compute_checksum">Ellenőrzőösszeg számolása</string>
 
     <!-- Actions * Ask user prior to do an undone operation. Dialog message -->
     <string name="actions_ask_undone_operation_msg">A művelet nem visszavonható. Biztosan folytatja?</string>
@@ -496,6 +504,13 @@
     <string name="execution_console_script_exitcode_label">Kilépő kód:</string>
     <!-- Execution console * The script execution time seconds string -->
     <string name="execution_console_script_execution_time_text"><xliff:g id="seconds">%1$s</xliff:g> mp.</string>
+
+    <!-- Compute checksum * Title -->
+    <string name="compute_checksum_title">Ellenőrzőösszeg számolása</string>
+    <!-- Compute checksum * The file name label -->
+    <string name="compute_checksum_filename_label">Fájl:</string>
+    <!-- Compute checksum * The computing checksum message-->
+    <string name="compute_checksum_computing_checksum_msg">Ellenőrzőösszeg kiszámítása\u2026</string>
 
     <!-- Mime/Types * Folder -->
     <string name="mime_folder">Könyvtár</string>
@@ -548,6 +563,8 @@
     <string name="pref_general">Általános beállítások</string>
     <!-- Preferences * Search title -->
     <string name="pref_search">Keresési opciók</string>
+    <!-- Preferences * Editor title -->
+    <string name="pref_editor">Szerkesztő beállítások</string>
     <!-- Preferences * Themes title -->
     <string name="pref_themes">Témák</string>
     <!-- Preferences * About title -->
@@ -619,6 +636,10 @@
     <string name="pref_remove_saved_search_terms_summary">Érintse meg az összes keresési feltételek törléséhez</string>
     <!-- Preferences * Search * Suggestions were truncated -->
     <string name="pref_remove_saved_search_terms_msg">Az összes keresési feltétel törölve.</string>
+    <!-- Preferences * Editor * Behaviour category -->
+    <string name="pref_editor_behaviour_category">Viselkedés</string>
+    <!-- Preferences * Editor * Word wrap -->
+    <string name="pref_word_wrap">Sortörés</string>
     <!-- Preferences * Themes * Themes selection category -->
     <string name="pref_themes_selection_category">Témák</string>
     <!-- Preferences * Themes * Set theme button -->
