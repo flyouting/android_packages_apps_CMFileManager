@@ -111,7 +111,7 @@ public class ColorDialogView extends RelativeLayout
         // Create the scrollview over the dialog
         final int dlgMarging = (int)convertDpToPixel(DEFAULT_MARGIN_DP);
         ScrollView sv = new ScrollView(getContext());
-        sv.setId(generateViewId());
+        sv.setId(APILevel17.generateViewId());
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT,
                 android.view.ViewGroup.LayoutParams.WRAP_CONTENT);
@@ -121,7 +121,7 @@ public class ColorDialogView extends RelativeLayout
 
         // Now the vertical layout
         LinearLayout ll = new LinearLayout(getContext());
-        ll.setId(generateViewId());
+        ll.setId(APILevel17.generateViewId());
         lp = new RelativeLayout.LayoutParams(
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT,
                 android.view.ViewGroup.LayoutParams.MATCH_PARENT);
