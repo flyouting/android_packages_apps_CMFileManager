@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2012 The CyanogenMod Project
+<!-- Copyright (C) 2012-2013 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -17,6 +17,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="app_name">Explorateur de fichiers</string>
   <string name="app_description">Explorateur de fichiers CyanogenMod</string>
+  <string name="size_bytes">o</string>
+  <string name="size_kilobytes">ko</string>
+  <string name="size_megabytes">Mo</string>
+  <string name="size_gigabytes">Go</string>
+  <string name="datetime_format_order">%1$s %2$s</string>
   <string name="device_blockdevice">Block device</string>
   <string name="device_characterdevice">Character device</string>
   <string name="device_namedpipe">Named pipe</string>
@@ -28,6 +33,7 @@
   <string name="all">Tous</string>
   <string name="overwrite">Écraser</string>
   <string name="select">Sélectionner</string>
+  <string name="root_directory_name"><![CDATA[<Dossier racine>]]></string>
   <string name="search_result_name">Rechercher\u00A0: <xliff:g id="terms">%1$s</xliff:g></string>
   <string name="loading_message">Chargement\u2026</string>
   <string name="cancelled_message">Annulé</string>
@@ -44,7 +50,7 @@
   <string name="msgs_cant_create_console">Impossible d\'obtenir les privilèges requis pour fonctionner</string>
   <string name="msgs_privileged_console_alloc_failed">Impossible de passer en mode Root. Retour au mode normal.</string>
   <string name="msgs_settings_save_failure">Impossible d\'appliquer ou d\'enregistrer le réglage</string>
-  <string name="msgs_settings_invalid_initial_directory">Le dossier d\'accueil "<xliff:g id="initial_dir">%1$s</xliff:g>" est invalide. Changement vers le dossier Root.</string>
+  <string name="msgs_settings_invalid_initial_directory">Le dossier d\'accueil "<xliff:g id="initial_dir">%1$s</xliff:g>" est invalide. Changement vers le dossier racine.</string>
   <string name="msgs_success">Opération réussie</string>
   <string name="msgs_unknown">Une erreur a été détectée. L\'opération a échoué</string>
   <string name="msgs_insufficient_permissions">Cette opération nécessite une élévation des droits. Tentative d\'accès Root.</string>
@@ -177,7 +183,7 @@
   <string name="displaying_message">Affichage\u2026</string>
   <string name="bookmarks">Favoris</string>
   <string name="bookmarks_home">Accueil</string>
-  <string name="bookmarks_root_folder">Dossier Root</string>
+  <string name="bookmarks_root_folder">Dossier racine</string>
   <string name="bookmarks_system_folder">Dossier système</string>
   <string name="bookmarks_button_config_cd">Choisir le dossier d\'accueil.</string>
   <string name="bookmarks_button_remove_bookmark_cd">Supprimer le favori</string>
@@ -274,6 +280,11 @@
   <string name="mime_folder">Dossier</string>
   <string name="mime_symlink">Lien symbolique</string>
   <string name="mime_unknown">Inconnu</string>
+  <string name="filetime_format_mode_system">Paramètre système</string>
+  <string name="filetime_format_mode_locale">Paramètre local</string>
+  <string name="filetime_format_mode_ddMMyyyy_HHmmss">jj/mm/aaaa hh:mm:ss</string>
+  <string name="filetime_format_mode_MMddyyyy_HHmmss">mm/jj/aaaa hh:mm:ss</string>
+  <string name="filetime_format_mode_yyyyMMdd_HHmmss">aaaa-mm-jj hh:mm:ss</string>
   <string name="selection_one_folder"><xliff:g id="folders">%1$s</xliff:g> dossier sélectionné</string>
   <string name="selection_other_folders"><xliff:g id="folders">%1$s</xliff:g> dossiers sélectionnés</string>
   <string name="selection_one_file"><xliff:g id="files">%1$s</xliff:g> fichier sélectionné</string>
@@ -311,6 +322,7 @@
   <string name="pref_general_behaviour_category">Général</string>
   <string name="pref_case_sensitive_sort">Sensible à la casse</string>
   <string name="pref_case_sensitive_sort_summary">Tenir compte de la casse lors de la navigation ou du tri des résultats de recherche</string>
+  <string name="pref_filetime_format_mode">Format Date/Heure</string>
   <string name="pref_disk_usage_warning_level">Avertissement d\'utilisation disque</string>
   <string name="pref_disk_usage_warning_level_summary" formatted="false">Afficher une couleur différente dans la barre d\'utilisation de l\'espace disque lorsque <xliff:g id="level">%1$s</xliff:g> pourcent d\'espace est utilisé</string>
   <string name="pref_compute_folder_statistics">Calculer les statistiques de dossiers</string>
