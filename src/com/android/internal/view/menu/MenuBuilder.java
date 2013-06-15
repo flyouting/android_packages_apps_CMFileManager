@@ -16,6 +16,7 @@
 
 package com.android.internal.view.menu;
 
+import com.cyanogenmod.filemanager.R;
 
 import android.content.ComponentName;
 import android.content.Context;

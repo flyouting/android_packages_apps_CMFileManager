@@ -16,6 +16,8 @@
 
 package com.android.internal.view.menu;
 
+import com.cyanogenmod.filemanager.R;
+
 import com.android.internal.view.menu.MenuView.ItemView;
 
 import android.content.ActivityNotFoundException;
