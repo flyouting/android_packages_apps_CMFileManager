@@ -822,4 +822,7 @@
     responsibility to ensure that an operation doesn\'t break your system.
     \n\nThe CyanogenMod Team.\n</string>
 
+  <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+enter for the shortcut. -->
+  <string name="menu_enter_shortcut_label">enter</string>
+
 </resources>
