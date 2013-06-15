@@ -822,7 +822,12 @@
     responsibility to ensure that an operation doesn\'t break your system.
     \n\nThe CyanogenMod Team.\n</string>
 
+  <!-- Prepended to the shortcut for a menu item to indicate that the user should hold the MENU button together with the shortcut to invoke the item. For example, if the shortcut to open a new tab in browser is MENU and B together, then this would be prepended to the letter "B" -->
+  <string name="prepend_shortcut_label">Menu+</string>
   <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+enter for the shortcut. -->
   <string name="menu_enter_shortcut_label">enter</string>
-
+  <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+delete for the shortcut. -->
+  <string name="menu_delete_shortcut_label">delete</string>
+  <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+space for the shortcut. -->
+  <string name="menu_space_shortcut_label">space</string>
 </resources>

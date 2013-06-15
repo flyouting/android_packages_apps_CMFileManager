@@ -117,13 +117,13 @@ public final class MenuItemImpl implements MenuItem {
         if (sPrependShortcutLabel == null) {
             // This is instantiated from the UI thread, so no chance of sync issues 
             sPrependShortcutLabel = menu.getContext().getResources().getString(
-                    com.android.internal.R.string.prepend_shortcut_label);
+                    R.string.prepend_shortcut_label);
             sEnterShortcutLabel = menu.getContext().getResources().getString(
-                    com.android.internal.R.string.menu_enter_shortcut_label);
+                    R.string.menu_enter_shortcut_label);
             sDeleteShortcutLabel = menu.getContext().getResources().getString(
-                    com.android.internal.R.string.menu_delete_shortcut_label);
+                    R.string.menu_delete_shortcut_label);
             sSpaceShortcutLabel = menu.getContext().getResources().getString(
-                    com.android.internal.R.string.menu_space_shortcut_label);
+                    R.string.menu_space_shortcut_label);
         }
         
         mMenu = menu;

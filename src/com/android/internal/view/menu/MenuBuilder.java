@@ -713,7 +713,7 @@ public class MenuBuilder implements Menu {
         mShortcutsVisible = shortcutsVisible
                 && mResources.getConfiguration().keyboard != Configuration.KEYBOARD_NOKEYS
                 && mResources.getBoolean(
-                        com.android.internal.R.bool.config_showMenuShortcutsWhenKeyboardPresent);
+                        R.bool.config_showMenuShortcutsWhenKeyboardPresent);
     }
 
     /**
