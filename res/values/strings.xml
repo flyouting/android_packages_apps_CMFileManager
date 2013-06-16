@@ -830,4 +830,8 @@
   <string name="menu_delete_shortcut_label">delete</string>
   <!-- Displayed in place of the regular shortcut letter when a menu item has Menu+space for the shortcut. -->
   <string name="menu_space_shortcut_label">space</string>
+
+  <!-- Theme Strings -->
+  <string name="dark_theme_name">Dark Theme</string>
+  <string name="dark_theme_desc">A dark theme for CyanogenMod File Manager.</string>
 </resources>
