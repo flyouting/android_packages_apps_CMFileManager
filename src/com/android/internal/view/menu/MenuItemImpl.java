@@ -16,7 +16,7 @@
 
 package com.android.internal.view.menu;
 
-import com.cyanogenmod.filemanager.R;
+import com.cyanogenmod.filemanager.ics.R;
 
 import com.android.internal.view.menu.MenuView.ItemView;
 
