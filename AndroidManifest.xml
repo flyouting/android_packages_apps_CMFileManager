@@ -16,8 +16,8 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
   package="com.cyanogenmod.filemanager.ics"
-  android:versionCode="102"
-  android:versionName="1.0.2">
+  android:versionCode="1012"
+  android:versionName="1.0.1.2">
 
   <original-package android:name="com.cyanogenmod.filemanager.ics" />
 
