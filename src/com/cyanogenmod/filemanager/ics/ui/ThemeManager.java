@@ -50,19 +50,19 @@ public final class ThemeManager {
      * The permission that MUST have the activity that holds the themes
      */
     public static final String PERMISSION_READ_THEME =
-            "com.cyanogenmod.filemanager.ics.permissions.READ_THEME"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.permissions.READ_THEME"; //$NON-NLS-1$
 
     /**
      * The action that MUST have all app that want to register as a theme for this app
      */
     public static final String ACTION_MAIN_THEME =
-            "com.cyanogenmod.filemanager.ics.actions.MAIN_THEME"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.actions.MAIN_THEME"; //$NON-NLS-1$
 
     /**
      * The category that MUST have all app that want to register as a theme for this app
      */
     public static final String CATEGORY_THEME =
-            "com.cyanogenmod.filemanager.ics.categories.THEME"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.categories.THEME"; //$NON-NLS-1$
 
     private static final String RESOURCE_THEMES_IDS = "themes_ids"; //$NON-NLS-1$
     private static final String RESOURCE_THEMES_NAMES = "themes_names"; //$NON-NLS-1$
