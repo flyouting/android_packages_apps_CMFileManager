@@ -64,7 +64,7 @@ public final class FileManagerApplication extends Application {
      * A constant that contains the main process name.
      * @hide
      */
-    public static final String MAIN_PROCESS = "com.cyanogenmod.filemanager"; //$NON-NLS-1$
+    public static final String MAIN_PROCESS = "com.cyanogenmod.filemanager.ics"; //$NON-NLS-1$
 
     //Static resources
     private static FileManagerApplication sApp;

@@ -180,25 +180,25 @@ public enum FileManagerSettings {
      * @hide
      */
     SETTINGS_THEME("cm_filemanager_theme", //$NON-NLS-1$
-                        "com.cyanogenmod.filemanager:light"); //$NON-NLS-1$
+                        "com.cyanogenmod.filemanager.ics:light"); //$NON-NLS-1$
 
     /**
      * A broadcast intent that is sent when a setting was changed
      */
     public final static String INTENT_SETTING_CHANGED =
-                        "com.cyanogenmod.filemanager.INTENT_SETTING_CHANGED"; //$NON-NLS-1$
+                        "com.cyanogenmod.filemanager.ics.INTENT_SETTING_CHANGED"; //$NON-NLS-1$
 
     /**
      * A broadcast intent that is sent when a theme was changed
      */
     public final static String INTENT_THEME_CHANGED =
-                        "com.cyanogenmod.filemanager.INTENT_THEME_CHANGED"; //$NON-NLS-1$
+                        "com.cyanogenmod.filemanager.ics.INTENT_THEME_CHANGED"; //$NON-NLS-1$
 
     /**
      * A broadcast intent that is sent when a file was changed
      */
     public final static String INTENT_FILE_CHANGED =
-                        "com.cyanogenmod.filemanager.INTENT_FILE_CHANGED"; //$NON-NLS-1$
+                        "com.cyanogenmod.filemanager.ics.INTENT_FILE_CHANGED"; //$NON-NLS-1$
 
     /**
      * The extra key with the preference key that was changed

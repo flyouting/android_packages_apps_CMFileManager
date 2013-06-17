@@ -48,7 +48,7 @@ public final class Preferences {
      * The name of the file manager settings file.
      * @hide
      */
-    public static final String SETTINGS_FILENAME = "com.cyanogenmod.filemanager"; //$NON-NLS-1$
+    public static final String SETTINGS_FILENAME = "com.cyanogenmod.filemanager.ics"; //$NON-NLS-1$
 
     /**
      * The list of configuration listeners.

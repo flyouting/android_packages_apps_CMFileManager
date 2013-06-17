@@ -49,7 +49,7 @@ public class BookmarksContentProvider extends ContentProvider  {
      * The authority string name.
      */
     public static final String AUTHORITY =
-            "com.cyanogenmod.filemanager.providers.bookmarks"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.ics.providers.bookmarks"; //$NON-NLS-1$
 
     private static final UriMatcher sURLMatcher = new UriMatcher(UriMatcher.NO_MATCH);
 

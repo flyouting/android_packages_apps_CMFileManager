@@ -57,25 +57,25 @@ public final class IntentsActionPolicy extends ActionsPolicy {
     private static boolean DEBUG = false;
 
     // The preferred package when sorting intents
-    private static final String PREFERRED_PACKAGE = "com.cyanogenmod.filemanager"; //$NON-NLS-1$
+    private static final String PREFERRED_PACKAGE = "com.cyanogenmod.filemanager.ics"; //$NON-NLS-1$
 
     /**
      * Extra field for the internal action
      */
     public static final String EXTRA_INTERNAL_ACTION =
-            "com.cyanogenmod.filemanager.extra.INTERNAL_ACTION"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.ics.extra.INTERNAL_ACTION"; //$NON-NLS-1$
 
     /**
      * Category for all the internal app viewers
      */
     public static final String CATEGORY_INTERNAL_VIEWER =
-            "com.cyanogenmod.filemanager.category.INTERNAL_VIEWER"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.ics.category.INTERNAL_VIEWER"; //$NON-NLS-1$
 
     /**
      * Category for all the app editor
      */
     public static final String CATEGORY_EDITOR =
-            "com.cyanogenmod.filemanager.category.EDITOR"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.ics.category.EDITOR"; //$NON-NLS-1$
 
     /**
      * Method that opens a {@link FileSystemObject} with the default registered application

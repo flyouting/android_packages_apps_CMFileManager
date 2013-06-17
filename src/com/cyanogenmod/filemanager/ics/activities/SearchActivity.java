@@ -104,7 +104,7 @@ public class SearchActivity extends Activity
      * An {@link Intent} action for restore view information.
      */
     public static final String ACTION_RESTORE =
-            "com.cyanogenmod.filemanager.activities.SearchActivity#Restore"; //$NON-NLS-1$
+            "com.cyanogenmod.filemanager.ics.activities.SearchActivity#Restore"; //$NON-NLS-1$
 
     /**
      * Intent extra parameter for search in the selected directory on enter.
