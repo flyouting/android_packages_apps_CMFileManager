@@ -73,6 +73,14 @@
       android:key="general_advanced_settings"
       android:title="@string/pref_general_advanced_settings_category">
 
+      <!--  Required commands -->
+      <com.cyanogenmod.filemanager.ics.preferences.MissingRequiredCommandsDialog
+        android:title="Missing required root cmds"/>
+       
+      <!--  Optional Commands -->
+      <com.cyanogenmod.filemanager.ics.preferences.MissingOptionalCommandsDialog
+        android:title="Missing optional root cmds"/>
+      
       <!-- Access Mode -->
       <ListPreference
         android:key="cm_filemanager_access_mode"

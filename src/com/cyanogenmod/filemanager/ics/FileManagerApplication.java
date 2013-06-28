@@ -16,6 +16,14 @@
 
 package com.cyanogenmod.filemanager.ics;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
+import java.util.Set;
+
 import android.app.Application;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -24,8 +32,6 @@ import android.content.IntentFilter;
 import android.content.pm.ApplicationInfo;
 import android.util.Log;
 
-import com.cyanogenmod.filemanager.ics.R;
-import com.cyanogenmod.filemanager.ics.R.string;
 import com.cyanogenmod.filemanager.ics.console.Console;
 import com.cyanogenmod.filemanager.ics.console.ConsoleAllocException;
 import com.cyanogenmod.filemanager.ics.console.ConsoleBuilder;
@@ -40,12 +46,6 @@ import com.cyanogenmod.filemanager.ics.ui.ThemeManager.Theme;
 import com.cyanogenmod.filemanager.ics.util.AIDHelper;
 import com.cyanogenmod.filemanager.ics.util.MimeTypeHelper;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Properties;
-
 /**
  * A class that wraps the information of the application (constants,
  * identifiers, statics variables, ...).
@@ -58,6 +58,8 @@ public final class FileManagerApplication extends Application {
     private static boolean DEBUG = false;
     private static Properties sSystemProperties;
 
+    private static Map<String, Boolean> sRequiredCommandPathMap;
+    private static Map<String, Boolean> sOptionalCommandPathMap;
     private static Map<String, Boolean> sOptionalCommandsMap;
 
     /**
@@ -455,14 +457,47 @@ public final class FileManagerApplication extends Application {
                     "Failed to read system properties.", e); //$NON-NLS-1$
         }
     }
-
+    
+    /**
+     * Method that returns required shell commands that are missing
+     * 
+     * @return ArrayList<String> Missing commands
+     */
+    public ArrayList<String> missingRequiredShellCommands() {
+    	ArrayList<String> toReturn = new ArrayList<String>();
+    	for (Map.Entry<String, Boolean> value: sRequiredCommandPathMap.entrySet()) {
+    		if (value.getValue()) {
+    			toReturn.add(value.getKey());
+    		}
+    	}
+    	return toReturn;
+    }
+    
+    /**
+     * Method that returns optional shell commands that are missing
+     * 
+     * @return ArrayList<String> Missing commands
+     */
+    public ArrayList<String> missingOptionalShellCommands() {
+    	ArrayList<String> toReturn = new ArrayList<String>();
+    	for (Map.Entry<String, Boolean> value: sOptionalCommandPathMap.entrySet()) {
+    		if (value.getValue()) {
+    			toReturn.add(value.getKey());
+    		}
+    	}
+    	return toReturn;
+    }
+    
     /**
      * Method that check if all shell commands are present in the device
      *
      * @return boolean Check if the device has all of the shell commands
      */
     private boolean areShellCommandsPresent() {
-        try {
+    	boolean commandsPresent = true;
+    	try {
+    		sRequiredCommandPathMap = new HashMap<String, Boolean>();
+    		
             String shellCommands = getString(R.string.shell_required_commands);
             String[] commands = shellCommands.split(","); //$NON-NLS-1$
             int cc = commands.length;
@@ -475,29 +510,30 @@ public final class FileManagerApplication extends Application {
                 String c = commands[i].trim();
                 if (c.length() == 0) continue;
                 File cmd = new File(c);
-                if (!cmd.exists() || !cmd.isFile()) {
+                Boolean found = Boolean.valueOf(cmd.exists() && cmd.isFile());
+                sRequiredCommandPathMap.put(c, found);
+                if (!found) {
+                	commandsPresent = found;
                     Log.w(TAG,
                             String.format(
                                     "Command %s not found. Exists: %s; IsFile: %s.", //$NON-NLS-1$
                                     c,
                                     String.valueOf(cmd.exists()),
                                     String.valueOf(cmd.isFile())));
-                    return false;
                 }
             }
-            // All commands are present
-            return true;
         } catch (Exception e) {
             Log.e(TAG,
                     "Failed to read shell commands.", e); //$NON-NLS-1$
         }
-        return false;
+        return commandsPresent;
     }
 
     @SuppressWarnings("boxing")
     private void loadOptionalCommands() {
         try {
             sOptionalCommandsMap = new HashMap<String, Boolean>();
+            sOptionalCommandPathMap = new HashMap<String, Boolean>();
 
             String shellCommands = getString(R.string.shell_optional_commands);
             String[] commands = shellCommands.split(","); //$NON-NLS-1$
@@ -514,6 +550,7 @@ public final class FileManagerApplication extends Application {
                 File cmd = new File(c);
                 Boolean found = Boolean.valueOf(cmd.exists() && cmd.isFile());
                 sOptionalCommandsMap.put(key, found);
+                sOptionalCommandPathMap.put(c, found);
                 if (DEBUG) {
                     Log.w(TAG,
                             String.format(
