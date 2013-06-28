@@ -466,7 +466,7 @@ public final class FileManagerApplication extends Application {
     public ArrayList<String> missingRequiredShellCommands() {
     	ArrayList<String> toReturn = new ArrayList<String>();
     	for (Map.Entry<String, Boolean> value: sRequiredCommandPathMap.entrySet()) {
-    		if (value.getValue()) {
+    		if (!value.getValue()) {
     			toReturn.add(value.getKey());
     		}
     	}
@@ -481,7 +481,7 @@ public final class FileManagerApplication extends Application {
     public ArrayList<String> missingOptionalShellCommands() {
     	ArrayList<String> toReturn = new ArrayList<String>();
     	for (Map.Entry<String, Boolean> value: sOptionalCommandPathMap.entrySet()) {
-    		if (value.getValue()) {
+    		if (!value.getValue()) {
     			toReturn.add(value.getKey());
     		}
     	}
